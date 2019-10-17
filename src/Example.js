@@ -13,7 +13,7 @@ class Example extends React.Component {
     UNSAFE_componentWillMount() {
         console.log('WillMountCount before is: ' +  this.state.count);
         this.setState({
-            count: 2
+            count: 1
           });
         console.log('WillMountCount after is: ' +  this.state.count);
     }
