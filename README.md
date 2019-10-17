@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About
+
+Two components Parent and Child have their states whit the number "count"
+
+Parent component's "count" value is passed to the child via prop named "parentCount"
+
+Life cycle method in Example Child shouldComponentUpdate() checks "count" numbers
+
+If the number "count" in the parent and in the child is the same, then child component will not update its' state.
+
+Throught the input is possible to update parent component state "count"
+
 ## Available Scripts
 
 In the project directory, you can run:
