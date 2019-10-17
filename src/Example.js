@@ -13,7 +13,7 @@ class Example extends React.Component {
     UNSAFE_componentWillMount() {
         console.log('WillMountCount before is: ' +  this.state.count);
         this.setState({
-            count: 1
+            count: 2
           });
         console.log('WillMountCount after is: ' +  this.state.count);
     }
@@ -28,13 +28,13 @@ class Example extends React.Component {
     componentDidUpdate() {
         console.log('DidUpdate Count is: ' +  this.state.count);
     }
-    
+
     handleChange(event) {
         let value = parseInt(event.target.value);
         let newValue = (isNaN(value) ? 0 : value);
         this.setState({count: newValue});
     }
-    
+
     handleSubmit(event) {
         event.preventDefault();
     }
